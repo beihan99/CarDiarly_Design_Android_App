@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RefuelingActivity">
+
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
+        android:layout_width="413dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <View
+            android:id="@+id/backColor"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#2196F3" />
+
+        <View
+            android:id="@+id/backShape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_wave" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/refuelling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="17dp"
+        android:text="Зареждане"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/typeCarsLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="327dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        app:boxBackgroundColor="@null"
+        app:boxBackgroundMode="filled"
+        app:boxCollapsedPaddingTop="0dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLinearLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/typeCars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/car_icon"
+            android:drawablePadding="16dp"
+            android:inputType="none"
+            android:text="Автомобил" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/typeFuelLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="139dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="30dp"
+        app:boxBackgroundColor="@null"
+        app:boxBackgroundMode="filled"
+        app:boxCollapsedPaddingTop="6dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeCarsLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/typeFuel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="16dp"
+            android:inputType="none"
+            android:text="Гориво" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/additiveFuelLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="151dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxCollapsedPaddingTop="6dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeCarsLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/additiveFuel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="16dp"
+            android:inputType="none"
+            android:text="Вид" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameGasStationLayout"
+        android:layout_width="327dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxCollapsedPaddingTop="6dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeFuelLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/nameGasStation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/fuel2_ico"
+            android:drawablePadding="16dp"
+            android:hint="Име (Petrol, Eko, ...)"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addressGasStationLayout"
+        android:layout_width="327dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxCollapsedPaddingTop="6dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameGasStationLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/addressGasStation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/address_ico"
+            android:drawablePadding="16dp"
+            android:hint="Адрес (ул.'Младост 3', Пловдив ...)"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/litersFuelLayout"
+        android:layout_width="139dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="30dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxCollapsedPaddingTop="6dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressGasStationLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/litersFuel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="16dp"
+            android:inputType="number"
+            android:hint="Литри" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/litersPriceFuelLayout"
+        android:layout_width="139dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxCollapsedPaddingTop="6dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressGasStationLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/litersPriceFuel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Цена/л."
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/totalPriceFuelLayout"
+        android:layout_width="139dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="30dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxCollapsedPaddingTop="6dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/addMpsBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/litersPriceFuelLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/totalPriceFuel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Oбща цена"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addMpsBtn"
+        android:layout_width="327dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:background="@drawable/border"
+        android:text="ДОБАВИ"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalPriceFuelLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
+        android:layout_width="413dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <View
+            android:id="@+id/backColor"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#2196F3" />
+
+        <View
+            android:id="@+id/backShape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_wave" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/carInfoLnearLayout"
+        android:layout_width="369dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/border2"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLinearLayout">
+
+        <LinearLayout
+            android:id="@+id/CarNAmeLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="#2196F3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/carName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="VW Golf 7 2.5 180 кс"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/InfoLinearLayiut"
+            android:layout_width="match_parent"
+            android:layout_height="366dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Danaci"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border2"
+                android:drawableStart="@drawable/car_icon3"
+                android:drawableEnd="@drawable/plus_icon"
+                android:drawablePadding="20dp"
+                android:gravity="center|left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Данък МПС"
+                android:textColor="#2196F3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Grajdanska"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border2"
+                android:drawableStart="@drawable/grajdanska_ico"
+                android:drawableEnd="@drawable/plus_icon"
+                android:drawablePadding="20dp"
+                android:gravity="center|left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Гражданска отговорност"
+                android:textColor="#2196F3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Vinetka"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border2"
+                android:drawableStart="@drawable/vinetka_ico"
+                android:drawableEnd="@drawable/plus_icon"
+                android:drawablePadding="20dp"
+                android:gravity="center|left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Винетка"
+                android:textColor="#2196F3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Kasko"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border2"
+                android:drawableStart="@drawable/kasko_ico"
+                android:drawableEnd="@drawable/plus_icon"
+                android:drawablePadding="20dp"
+                android:gravity="center|left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Каско"
+                android:textColor="#2196F3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Pregled"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border2"
+                android:drawableStart="@drawable/pregled_ico"
+                android:drawableEnd="@drawable/plus_icon"
+                android:drawablePadding="20dp"
+                android:gravity="center|left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Технически преглед"
+                android:textColor="#2196F3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Fon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border2"
+                android:drawableStart="@drawable/back_ico"
+                android:drawableEnd="@drawable/plus_icon"
+                android:drawablePadding="20dp"
+                android:gravity="center|left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Смени фона"
+                android:textColor="#2196F3"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#2196F3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/nachaloBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:drawableTop="@drawable/home_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="Начало"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/TaksiBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:drawableTop="@drawable/money_ico"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="Такси"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/IstoriqBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:drawableTop="@drawable/history_ico"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="История"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/RazhodiBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:drawableTop="@drawable/money2_ico"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="Разходи"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
